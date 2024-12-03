@@ -1,0 +1,11 @@
+services:
+  main:
+    build: ./
+    ports:
+      - 5000:5000
+    volumes:
+      - static:/app/static
+      - ./images:/app/bind
+
+volumes:
+  static:
